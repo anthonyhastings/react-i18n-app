@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+import { addLocaleData } from 'react-intl';
+import de from 'react-intl/locale-data/de';
+import en from 'react-intl/locale-data/en';
+import es from 'react-intl/locale-data/es';
+import fr from 'react-intl/locale-data/fr';
+import store from 'store';
+import App from 'components/app';
+import IntlProvider from 'components/intl-provider/containers';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Adding locale information (plural rules, date formats) for supported locales.
+addLocaleData([...de, ...en, ...es, ...fr]);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  <Provider store={store}>
+    <IntlProvider>
+      <App />
+    </IntlProvider>
+  </Provider>,
+  document.getElementById('root')
+);
