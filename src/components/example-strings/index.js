@@ -19,6 +19,7 @@ const ExampleStrings = ({
         <FormattedMessage
           id="example-strings.name-label"
           defaultMessage="Name:"
+          description="The label for a form field signifying a persons name."
         >
           {(txt) => <label htmlFor="name-input">{txt}</label>}
         </FormattedMessage>
@@ -35,6 +36,7 @@ const ExampleStrings = ({
         <FormattedMessage
           id="example-strings.unread-messages-label"
           defaultMessage="Unread Messages:"
+          description="The label for a form field signifying the number of unread messages."
         >
           {(txt) => <label htmlFor="unread-messages-input">{txt}</label>}
         </FormattedMessage>
@@ -51,6 +53,7 @@ const ExampleStrings = ({
         <FormattedMessage
           id="example-strings.wallet-value-label"
           defaultMessage="Wallet Value:"
+          description="The value of a wallet."
         >
           {(txt) => <label htmlFor="wallet-value-input">{txt}</label>}
         </FormattedMessage>

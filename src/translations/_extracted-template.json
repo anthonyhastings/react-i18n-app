@@ -16,19 +16,23 @@
     "description": "A simple string with no interpolation required."
   },
   "example-strings.name-label": {
-    "defaultMessage": "Name:"
+    "defaultMessage": "Name:",
+    "description": "The label for a form field signifying a persons name."
   },
   "example-strings.plurals": {
     "defaultMessage": "Hello {name}, you have {unreadMessages, number} unread {unreadMessages, plural, one {message} other {messages}}.",
     "description": "An interpolated string with placeholders and formatting."
   },
   "example-strings.unread-messages-label": {
-    "defaultMessage": "Unread Messages:"
+    "defaultMessage": "Unread Messages:",
+    "description": "The label for a form field signifying the number of unread messages."
   },
   "example-strings.wallet-value-label": {
-    "defaultMessage": "Wallet Value:"
+    "defaultMessage": "Wallet Value:",
+    "description": "The value of a wallet."
   },
   "locale-selector.label": {
-    "defaultMessage": "Choose a locale:"
+    "defaultMessage": "Choose a locale:",
+    "description": "Label for a dropdown allowing user to change locale."
   }
 }
