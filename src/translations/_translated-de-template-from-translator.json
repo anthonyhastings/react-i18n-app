@@ -1,0 +1,34 @@
+{
+  "example-strings.currency": {
+    "defaultMessage": "In meiner Brieftasche habe ich {walletValue, number, EUR}.",
+    "description": "A string with currency formatting."
+  },
+  "example-strings.dates": {
+    "defaultMessage": "Heute ist {today, date, full}.",
+    "description": "A string with various date formattings."
+  },
+  "example-strings.interpolation": {
+    "defaultMessage": "Hallo, {name}.",
+    "description": "A simple string with some interpolation."
+  },
+  "example-strings.literal": {
+    "defaultMessage": "Dies ist eine einfache Zeichenfolge.",
+    "description": "A simple string with no interpolation required."
+  },
+  "example-strings.name-label": {
+    "defaultMessage": "Name:"
+  },
+  "example-strings.plurals": {
+    "defaultMessage": "Hallo {name}, du hast {unreadMessages, number} ungelesene {unreadMessages, plural, one {Nachricht} other {Nachrichten}}.",
+    "description": "An interpolated string with placeholders and formatting."
+  },
+  "example-strings.unread-messages-label": {
+    "defaultMessage": "Ungelesene Nachrichten:"
+  },
+  "example-strings.wallet-value-label": {
+    "defaultMessage": "Wallet Wert:"
+  },
+  "locale-selector.label": {
+    "defaultMessage": "Wähle ein Gebietsschema:"
+  }
+}

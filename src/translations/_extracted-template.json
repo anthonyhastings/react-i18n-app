@@ -1,0 +1,34 @@
+{
+  "example-strings.currency": {
+    "defaultMessage": "In my wallet I have {walletValue, number, GBP}.",
+    "description": "A string with currency formatting."
+  },
+  "example-strings.dates": {
+    "defaultMessage": "Today is {today, date, full}.",
+    "description": "A string with various date formattings."
+  },
+  "example-strings.interpolation": {
+    "defaultMessage": "Hello, {name}.",
+    "description": "A simple string with some interpolation."
+  },
+  "example-strings.literal": {
+    "defaultMessage": "This is a simple string.",
+    "description": "A simple string with no interpolation required."
+  },
+  "example-strings.name-label": {
+    "defaultMessage": "Name:"
+  },
+  "example-strings.plurals": {
+    "defaultMessage": "Hello {name}, you have {unreadMessages, number} unread {unreadMessages, plural, one {message} other {messages}}.",
+    "description": "An interpolated string with placeholders and formatting."
+  },
+  "example-strings.unread-messages-label": {
+    "defaultMessage": "Unread Messages:"
+  },
+  "example-strings.wallet-value-label": {
+    "defaultMessage": "Wallet Value:"
+  },
+  "locale-selector.label": {
+    "defaultMessage": "Choose a locale:"
+  }
+}
