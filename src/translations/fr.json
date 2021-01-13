@@ -3,9 +3,9 @@
   "example-strings.dates": "Aujourd'hui, {today, date, full}.",
   "example-strings.interpolation": "Bonjour, {name}.",
   "example-strings.literal": "Ceci est une chaîne simple.",
-  "example-strings.name-label": "Prénom:",
+  "example-strings.name-label": "Prénom :",
   "example-strings.plurals": "Bonjour {name}, vous avez {unreadMessages, number} {unreadMessages, plural, one {message non lu} other {messages non lus}}.",
-  "example-strings.unread-messages-label": "Messages non lus:",
-  "example-strings.wallet-value-label": "Valeur du portefeuille:",
-  "locale-selector.label": "Choisissez un lieu:"
+  "example-strings.unread-messages-label": "Messages non lus :",
+  "example-strings.wallet-value-label": "Valeur du portefeuille :",
+  "locale-selector.label": "Choisissez un lieu :"
 }
