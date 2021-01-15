@@ -33,7 +33,7 @@ export const setUnreadMessages = (unreadMessages) => ({
   unreadMessages
 });
 
-export default (state = defaultState, action) => {
+const reducer = (state = defaultState, action) => {
   switch (action.type) {
     case SET_CURRENT_LOCALE:
       return state.set('currentLocale', action.locale);
@@ -60,6 +60,8 @@ export default (state = defaultState, action) => {
       return state;
   }
 };
+
+export default reducer;
 
 export const currentLocaleSelector = (state) => state.get('currentLocale');
 
