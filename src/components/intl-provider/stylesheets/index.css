@@ -1,0 +1,15 @@
+.intl-provider {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.intl-provider__loader {
+  background: url('../images/spinner.svg') no-repeat 0 0;
+  display: block;
+  height: 5rem;
+  width: 5rem;
+}
