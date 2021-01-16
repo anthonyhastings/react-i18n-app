@@ -87,7 +87,7 @@ const ExampleStrings = ({
         <FormattedMessage
           id="example-strings.plurals"
           description="An interpolated string with placeholders and formatting."
-          defaultMessage={`Hello {name}, you have {unreadMessages, number} unread {unreadMessages, plural, one {message} other {messages}}.`}
+          defaultMessage={`Hello {name}, you have {unreadMessages, plural, one {# unread message} other {# unread messages}}.`}
           values={{ name: <b>{name}</b>, unreadMessages }}
         />
       </div>

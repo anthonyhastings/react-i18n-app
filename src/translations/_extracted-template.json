@@ -20,7 +20,7 @@
     "description": "The label for a form field signifying a persons name."
   },
   "example-strings.plurals": {
-    "defaultMessage": "Hello {name}, you have {unreadMessages, number} unread {unreadMessages, plural, one {message} other {messages}}.",
+    "defaultMessage": "Hello {name}, you have {unreadMessages, plural, one {# unread message} other {# unread messages}}.",
     "description": "An interpolated string with placeholders and formatting."
   },
   "example-strings.unread-messages-label": {

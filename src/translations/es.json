@@ -4,7 +4,7 @@
   "example-strings.interpolation": "Hola, {name}.",
   "example-strings.literal": "Esta es una cadena simple.",
   "example-strings.name-label": "Nombre:",
-  "example-strings.plurals": "Hola {name}, tienes {unreadMessages, number} {unreadMessages, plural, one {mensaje no leído} other {mensajes no leídos}}.",
+  "example-strings.plurals": "Hola {name}, tienes {unreadMessages, plural, one {# mensaje no leído} other {# mensajes no leídos}}.",
   "example-strings.unread-messages-label": "Mensajes no leídos:",
   "example-strings.wallet-value-label": "Valor de la cartera:",
   "locale-selector.label": "Elija un local:"

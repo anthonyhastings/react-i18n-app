@@ -19,7 +19,7 @@
     "defaultMessage": "Name:"
   },
   "example-strings.plurals": {
-    "defaultMessage": "Hallo {name}, du hast {unreadMessages, number} ungelesene {unreadMessages, plural, one {Nachricht} other {Nachrichten}}.",
+    "defaultMessage": "Hallo {name}, du hast {unreadMessages, plural, one {# ungelesene Nachricht} other {# ungelesene Nachrichten}}.",
     "description": "An interpolated string with placeholders and formatting."
   },
   "example-strings.unread-messages-label": {
