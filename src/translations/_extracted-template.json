@@ -7,6 +7,22 @@
     "defaultMessage": "Today is {today, date, full}.",
     "description": "A string with various date formattings."
   },
+  "example-strings.gender-label": {
+    "defaultMessage": "Gender:",
+    "description": "The label for a form field signifying a persons gender."
+  },
+  "example-strings.gender-option-female": {
+    "defaultMessage": "Female",
+    "description": "The female gender."
+  },
+  "example-strings.gender-option-male": {
+    "defaultMessage": "Male",
+    "description": "The male gender."
+  },
+  "example-strings.gender-option-other": {
+    "defaultMessage": "Other",
+    "description": "Indicating neither male or female as a gender."
+  },
   "example-strings.interpolation": {
     "defaultMessage": "Hello, {name}.",
     "description": "A simple string with some interpolation."

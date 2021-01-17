@@ -7,7 +7,9 @@ const namespace = 'example-strings';
 
 const ExampleStrings = ({
   name,
+  gender,
   setName,
+  setGender,
   setUnreadMessages,
   setWalletValue,
   unreadMessages,
@@ -30,6 +32,44 @@ const ExampleStrings = ({
           type="text"
           value={name}
         />
+      </div>
+
+      <div className={`${namespace}__pod`}>
+        <FormattedMessage
+          id="example-strings.gender-label"
+          defaultMessage="Gender:"
+          description="The label for a form field signifying a persons gender."
+        >
+          {(txt) => <label htmlFor="name-input">{txt}</label>}
+        </FormattedMessage>
+        <select
+          className={`${namespace}__control`}
+          id="gender-selector"
+          onChange={(e) => setGender(e.currentTarget.value)}
+          value={gender}
+        >
+          <FormattedMessage
+            id="example-strings.gender-option-male"
+            defaultMessage="Male"
+            description="The male gender."
+          >
+            {(txt) => <option value={'male'}>{txt}</option>}
+          </FormattedMessage>
+          <FormattedMessage
+            id="example-strings.gender-option-female"
+            defaultMessage="Female"
+            description="The female gender."
+          >
+            {(txt) => <option value={'female'}>{txt}</option>}
+          </FormattedMessage>
+          <FormattedMessage
+            id="example-strings.gender-option-other"
+            defaultMessage="Other"
+            description="Indicating neither male or female as a gender."
+          >
+            {(txt) => <option value={'other'}>{txt}</option>}
+          </FormattedMessage>
+        </select>
       </div>
 
       <div className={`${namespace}__pod`}>

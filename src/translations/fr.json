@@ -1,6 +1,10 @@
 {
   "example-strings.currency": "Dans mon portefeuille j'ai {walletValue, number, EUR}.",
   "example-strings.dates": "Aujourd'hui, {today, date, full}.",
+  "example-strings.gender-label": "Le sexe :",
+  "example-strings.gender-option-female": "Femme",
+  "example-strings.gender-option-male": "Mâle",
+  "example-strings.gender-option-other": "Autre",
   "example-strings.interpolation": "Bonjour, {name}.",
   "example-strings.literal": "Ceci est une chaîne simple.",
   "example-strings.name-label": "Prénom :",

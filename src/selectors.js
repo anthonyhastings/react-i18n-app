@@ -13,6 +13,11 @@ export const nameSelector = createSelector(
   settingsReducerExports.nameSelector
 );
 
+export const genderSelector = createSelector(
+  settingsSelector,
+  settingsReducerExports.genderSelector
+);
+
 export const unreadMessagesSelector = createSelector(
   settingsSelector,
   settingsReducerExports.unreadMessagesSelector

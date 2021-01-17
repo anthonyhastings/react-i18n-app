@@ -4,18 +4,25 @@ import { en } from 'constants/locales';
 const defaultState = Immutable.fromJS({
   currentLocale: en,
   name: 'Anthony',
+  gender: 'other',
   unreadMessages: 31,
   walletValue: 123.456789
 });
 
 const SET_CURRENT_LOCALE = 'SET_CURRENT_LOCALE';
 const SET_NAME = 'SET_NAME';
+const SET_GENDER = 'SET_GENDER';
 const SET_UNREAD_MESSAGES = 'SET_UNREAD_MESSAGES';
 const SET_WALLET_VALUE = 'SET_WALLET_VALUE';
 
 export const setCurrentLocale = (locale) => ({
   type: SET_CURRENT_LOCALE,
   locale
+});
+
+export const setGender = (gender) => ({
+  type: SET_GENDER,
+  gender
 });
 
 export const setName = (name) => ({
@@ -37,6 +44,9 @@ const reducer = (state = defaultState, action) => {
   switch (action.type) {
     case SET_CURRENT_LOCALE:
       return state.set('currentLocale', action.locale);
+
+    case SET_GENDER:
+      return state.set('gender', action.gender);
 
     case SET_NAME:
       const normalisedName = action.name.length === 0 ? undefined : action.name;
@@ -66,6 +76,8 @@ export default reducer;
 export const currentLocaleSelector = (state) => state.get('currentLocale');
 
 export const nameSelector = (state) => state.get('name');
+
+export const genderSelector = (state) => state.get('gender');
 
 export const unreadMessagesSelector = (state) => state.get('unreadMessages');
 

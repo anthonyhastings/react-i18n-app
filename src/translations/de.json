@@ -1,6 +1,10 @@
 {
   "example-strings.currency": "In meiner Brieftasche habe ich {walletValue, number, EUR}.",
   "example-strings.dates": "Heute ist {today, date, full}.",
+  "example-strings.gender-label": "Geschlecht:",
+  "example-strings.gender-option-female": "Weiblich",
+  "example-strings.gender-option-male": "Männlich",
+  "example-strings.gender-option-other": "Andere",
   "example-strings.interpolation": "Hallo, {name}.",
   "example-strings.literal": "Dies ist eine einfache Zeichenfolge.",
   "example-strings.name-label": "Name:",
