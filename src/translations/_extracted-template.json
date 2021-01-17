@@ -39,6 +39,10 @@
     "defaultMessage": "Hello {name}, you have {unreadMessages, plural, one {# unread message} other {# unread messages}}.",
     "description": "An interpolated string with placeholders and formatting."
   },
+  "example-strings.select": {
+    "defaultMessage": "{gender, select, male {He} female {She} other {They}} should get reading!",
+    "description": "An interpolated string with select syntax."
+  },
   "example-strings.unread-messages-label": {
     "defaultMessage": "Unread Messages:",
     "description": "The label for a form field signifying the number of unread messages."

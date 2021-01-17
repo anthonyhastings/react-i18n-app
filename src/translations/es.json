@@ -9,6 +9,7 @@
   "example-strings.literal": "Esta es una cadena simple.",
   "example-strings.name-label": "Nombre:",
   "example-strings.plurals": "Hola {name}, tienes {unreadMessages, plural, one {# mensaje no leído} other {# mensajes no leídos}}.",
+  "example-strings.select": "{gender, select, male {¡Debería empezar a leer!} female {¡Debería empezar a leer!} other {¡Deberían empezar a leer!}}",
   "example-strings.unread-messages-label": "Mensajes no leídos:",
   "example-strings.wallet-value-label": "Valor de la cartera:",
   "locale-selector.label": "Elija un local:"

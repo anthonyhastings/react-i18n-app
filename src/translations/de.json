@@ -9,6 +9,7 @@
   "example-strings.literal": "Dies ist eine einfache Zeichenfolge.",
   "example-strings.name-label": "Name:",
   "example-strings.plurals": "Hallo {name}, du hast {unreadMessages, plural, one {# ungelesene Nachricht} other {# ungelesene Nachrichten}}.",
+  "example-strings.select": "{gender, select, male {Er sollte lesen!} female {Sie sollte lesen!} other {Sie sollten lesen!}}",
   "example-strings.unread-messages-label": "Ungelesene Nachrichten:",
   "example-strings.wallet-value-label": "Wallet Wert:",
   "locale-selector.label": "Wähle ein Gebietsschema:"

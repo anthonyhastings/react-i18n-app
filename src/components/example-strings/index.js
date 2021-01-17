@@ -132,6 +132,17 @@ const ExampleStrings = ({
         />
       </div>
 
+      {unreadMessages > 0 && (
+        <div className={`${namespace}__pod`}>
+          <FormattedMessage
+            id="example-strings.select"
+            description="An interpolated string with select syntax."
+            defaultMessage={`{gender, select, male {He} female {She} other {They}} should get reading!`}
+            values={{ gender }}
+          />
+        </div>
+      )}
+
       <div className={`${namespace}__pod`}>
         <FormattedMessage
           id="example-strings.dates"
