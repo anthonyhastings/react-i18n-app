@@ -16,6 +16,7 @@ const LocaleSelector = ({ locales, onChange, selectedLocale }) => {
       <FormattedMessage
         id="locale-selector.label"
         defaultMessage="Choose a locale:"
+        description="Label for a dropdown allowing user to change locale."
       >
         {(txt) => <label htmlFor="locale-selector">{txt}</label>}
       </FormattedMessage>

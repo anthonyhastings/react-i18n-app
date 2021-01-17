@@ -3,21 +3,24 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@formatjs/intl-pluralrules": "4.0.5",
     "immutable": "3.8.2",
     "normalize.css": "8.0.1",
     "prop-types": "15.7.2",
     "react": "16.8.4",
     "react-dom": "16.8.4",
-    "react-intl": "2.8.0",
+    "react-intl": "5.10.16",
     "react-redux": "6.0.1",
-    "react-scripts": "2.1.8",
+    "react-scripts": "4.0.1",
     "redux": "4.0.1",
     "redux-devtools-extension": "2.13.8",
     "redux-immutable": "4.0.0",
     "reselect": "4.0.0"
   },
   "devDependencies": {
+    "@formatjs/cli": "3.0.1",
     "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-formatjs": "2.10.3",
     "eslint-plugin-prettier": "3.0.1",
     "prettier": "1.16.4"
   },
@@ -27,7 +30,9 @@
     "lint": "eslint --ext .js src/",
     "pretest": "yarn run lint",
     "start": "NODE_PATH=src react-scripts start",
-    "test": "NODE_PATH=src react-scripts test"
+    "test": "NODE_PATH=src react-scripts test",
+    "translations:compile": "formatjs compile src/translations/_translated-de-template-from-translator.json --out-file src/translations/de.json",
+    "translations:extract": "formatjs extract 'src/**/*.js' --out-file src/translations/_extracted-template.json"
   },
   "browserslist": [
     "last 2 versions",

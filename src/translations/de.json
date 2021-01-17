@@ -1,10 +1,15 @@
 {
   "example-strings.currency": "In meiner Brieftasche habe ich {walletValue, number, EUR}.",
   "example-strings.dates": "Heute ist {today, date, full}.",
+  "example-strings.gender-label": "Geschlecht:",
+  "example-strings.gender-option-female": "Weiblich",
+  "example-strings.gender-option-male": "Männlich",
+  "example-strings.gender-option-other": "Andere",
   "example-strings.interpolation": "Hallo, {name}.",
   "example-strings.literal": "Dies ist eine einfache Zeichenfolge.",
   "example-strings.name-label": "Name:",
-  "example-strings.plurals": "Hallo {name}, du hast {unreadMessages, number} ungelesene {unreadMessages, plural, one {Nachricht} other {Nachrichten}}.",
+  "example-strings.plurals": "Hallo {name}, du hast {unreadMessages, plural, one {# ungelesene Nachricht} other {# ungelesene Nachrichten}}.",
+  "example-strings.select": "{gender, select, male {Er sollte lesen!} female {Sie sollte lesen!} other {Sie sollten lesen!}}",
   "example-strings.unread-messages-label": "Ungelesene Nachrichten:",
   "example-strings.wallet-value-label": "Wallet Wert:",
   "locale-selector.label": "Wähle ein Gebietsschema:"

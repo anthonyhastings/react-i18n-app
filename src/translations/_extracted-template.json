@@ -1,0 +1,58 @@
+{
+  "example-strings.currency": {
+    "defaultMessage": "In my wallet I have {walletValue, number, GBP}.",
+    "description": "A string with currency formatting."
+  },
+  "example-strings.dates": {
+    "defaultMessage": "Today is {today, date, full}.",
+    "description": "A string with various date formattings."
+  },
+  "example-strings.gender-label": {
+    "defaultMessage": "Gender:",
+    "description": "The label for a form field signifying a persons gender."
+  },
+  "example-strings.gender-option-female": {
+    "defaultMessage": "Female",
+    "description": "The female gender."
+  },
+  "example-strings.gender-option-male": {
+    "defaultMessage": "Male",
+    "description": "The male gender."
+  },
+  "example-strings.gender-option-other": {
+    "defaultMessage": "Other",
+    "description": "Indicating neither male or female as a gender."
+  },
+  "example-strings.interpolation": {
+    "defaultMessage": "Hello, {name}.",
+    "description": "A simple string with some interpolation."
+  },
+  "example-strings.literal": {
+    "defaultMessage": "This is a simple string.",
+    "description": "A simple string with no interpolation required."
+  },
+  "example-strings.name-label": {
+    "defaultMessage": "Name:",
+    "description": "The label for a form field signifying a persons name."
+  },
+  "example-strings.plurals": {
+    "defaultMessage": "Hello {name}, you have {unreadMessages, plural, one {# unread message} other {# unread messages}}.",
+    "description": "An interpolated string with placeholders and formatting."
+  },
+  "example-strings.select": {
+    "defaultMessage": "{gender, select, male {He} female {She} other {They}} should get reading!",
+    "description": "An interpolated string with select syntax."
+  },
+  "example-strings.unread-messages-label": {
+    "defaultMessage": "Unread Messages:",
+    "description": "The label for a form field signifying the number of unread messages."
+  },
+  "example-strings.wallet-value-label": {
+    "defaultMessage": "Wallet Value:",
+    "description": "The value of a wallet."
+  },
+  "locale-selector.label": {
+    "defaultMessage": "Choose a locale:",
+    "description": "Label for a dropdown allowing user to change locale."
+  }
+}

@@ -7,7 +7,9 @@ const namespace = 'example-strings';
 
 const ExampleStrings = ({
   name,
+  gender,
   setName,
+  setGender,
   setUnreadMessages,
   setWalletValue,
   unreadMessages,
@@ -19,6 +21,7 @@ const ExampleStrings = ({
         <FormattedMessage
           id="example-strings.name-label"
           defaultMessage="Name:"
+          description="The label for a form field signifying a persons name."
         >
           {(txt) => <label htmlFor="name-input">{txt}</label>}
         </FormattedMessage>
@@ -33,8 +36,47 @@ const ExampleStrings = ({
 
       <div className={`${namespace}__pod`}>
         <FormattedMessage
+          id="example-strings.gender-label"
+          defaultMessage="Gender:"
+          description="The label for a form field signifying a persons gender."
+        >
+          {(txt) => <label htmlFor="name-input">{txt}</label>}
+        </FormattedMessage>
+        <select
+          className={`${namespace}__control`}
+          id="gender-selector"
+          onChange={(e) => setGender(e.currentTarget.value)}
+          value={gender}
+        >
+          <FormattedMessage
+            id="example-strings.gender-option-male"
+            defaultMessage="Male"
+            description="The male gender."
+          >
+            {(txt) => <option value={'male'}>{txt}</option>}
+          </FormattedMessage>
+          <FormattedMessage
+            id="example-strings.gender-option-female"
+            defaultMessage="Female"
+            description="The female gender."
+          >
+            {(txt) => <option value={'female'}>{txt}</option>}
+          </FormattedMessage>
+          <FormattedMessage
+            id="example-strings.gender-option-other"
+            defaultMessage="Other"
+            description="Indicating neither male or female as a gender."
+          >
+            {(txt) => <option value={'other'}>{txt}</option>}
+          </FormattedMessage>
+        </select>
+      </div>
+
+      <div className={`${namespace}__pod`}>
+        <FormattedMessage
           id="example-strings.unread-messages-label"
           defaultMessage="Unread Messages:"
+          description="The label for a form field signifying the number of unread messages."
         >
           {(txt) => <label htmlFor="unread-messages-input">{txt}</label>}
         </FormattedMessage>
@@ -51,6 +93,7 @@ const ExampleStrings = ({
         <FormattedMessage
           id="example-strings.wallet-value-label"
           defaultMessage="Wallet Value:"
+          description="The value of a wallet."
         >
           {(txt) => <label htmlFor="wallet-value-input">{txt}</label>}
         </FormattedMessage>
@@ -84,10 +127,21 @@ const ExampleStrings = ({
         <FormattedMessage
           id="example-strings.plurals"
           description="An interpolated string with placeholders and formatting."
-          defaultMessage={`Hello {name}, you have {unreadMessages, number} unread {unreadMessages, plural, one {message} other {messages}}.`}
+          defaultMessage={`Hello {name}, you have {unreadMessages, plural, one {# unread message} other {# unread messages}}.`}
           values={{ name: <b>{name}</b>, unreadMessages }}
         />
       </div>
+
+      {unreadMessages > 0 && (
+        <div className={`${namespace}__pod`}>
+          <FormattedMessage
+            id="example-strings.select"
+            description="An interpolated string with select syntax."
+            defaultMessage={`{gender, select, male {He} female {She} other {They}} should get reading!`}
+            values={{ gender }}
+          />
+        </div>
+      )}
 
       <div className={`${namespace}__pod`}>
         <FormattedMessage

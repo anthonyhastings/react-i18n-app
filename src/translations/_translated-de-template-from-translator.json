@@ -1,0 +1,58 @@
+{
+  "example-strings.currency": {
+    "defaultMessage": "In meiner Brieftasche habe ich {walletValue, number, EUR}.",
+    "description": "A string with currency formatting."
+  },
+  "example-strings.dates": {
+    "defaultMessage": "Heute ist {today, date, full}.",
+    "description": "A string with various date formattings."
+  },
+  "example-strings.gender-label": {
+    "defaultMessage": "Geschlecht:",
+    "description": "The label for a form field signifying a persons gender."
+  },
+  "example-strings.gender-option-female": {
+    "defaultMessage": "Weiblich",
+    "description": "The female gender."
+  },
+  "example-strings.gender-option-male": {
+    "defaultMessage": "Männlich",
+    "description": "The male gender."
+  },
+  "example-strings.gender-option-other": {
+    "defaultMessage": "Andere",
+    "description": "Indicating neither male or female as a gender."
+  },
+  "example-strings.interpolation": {
+    "defaultMessage": "Hallo, {name}.",
+    "description": "A simple string with some interpolation."
+  },
+  "example-strings.literal": {
+    "defaultMessage": "Dies ist eine einfache Zeichenfolge.",
+    "description": "A simple string with no interpolation required."
+  },
+  "example-strings.name-label": {
+    "defaultMessage": "Name:",
+    "description": "The label for a form field signifying a persons name."
+  },
+  "example-strings.plurals": {
+    "defaultMessage": "Hallo {name}, du hast {unreadMessages, plural, one {# ungelesene Nachricht} other {# ungelesene Nachrichten}}.",
+    "description": "An interpolated string with placeholders and formatting."
+  },
+  "example-strings.select": {
+    "defaultMessage": "{gender, select, male {Er sollte lesen!} female {Sie sollte lesen!} other {Sie sollten lesen!}}",
+    "description": "An interpolated string with select syntax."
+  },
+  "example-strings.unread-messages-label": {
+    "defaultMessage": "Ungelesene Nachrichten:",
+    "description": "The label for a form field signifying the number of unread messages."
+  },
+  "example-strings.wallet-value-label": {
+    "defaultMessage": "Wallet Wert:",
+    "description": "The value of a wallet."
+  },
+  "locale-selector.label": {
+    "defaultMessage": "Wähle ein Gebietsschema:",
+    "description": "Label for a dropdown allowing user to change locale."
+  }
+}
