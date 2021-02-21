@@ -7,12 +7,14 @@
 
 This repository showcases how react applications can make use of `react-intl` to aid with interationalization, and cater for numerous languages / regions. Examples contained within showcase:
 - Dynamically loading i18n polyfills per locale as required.
+- Linting translation components to enforce consistency in their implementation.
 - Adding simple translations.
 - Interpolating translations with dynamic values.
 - Handling translations containing plurals.
 - Using syntax that allows for switch statement like translations.
 - Displaying numeric values as currency.
 - Converting timestamps into human-readable dates.
+- Wrapping substrings of translations with HTML.
 
 ## Instructions
 This project assumes you already have Node and Yarn installed. The steps are as follows:
@@ -51,6 +53,25 @@ Now when reloading the project, you can see in the network panel a core plural r
 
 ## Noteworthy Information
 
+### i18n vs l10n
+
+**Internationalization (i18n)** is the process of getting an application ready to handle multiple languages (e.g. database charset migrations, implementing translation libraries and wrapping source strings, designing UI to be fluid and capable of handling varying amounts of text content).
+
+**Localization (l10n)** is the process of incorporating another locale / language into your application by adding new translation files, options to language dropdowns etc.
+
+### Keys: Default language vs Namespace
+Translation files work by matching a key to a translation but this key often appears in two forms:
+
+- **Default Language** - This is often the easier path to take, as it means you won't need a translation file for your default language. Disadvantages are that you lose context of where the translation is being placed, and context could alter the translation. For example, single-word translations like "Next" or "Continue" can occur at various places within the application (e.g. labels, buttons, tab names etc) but might have very different meaning or gender connotations depending on their placement. The literal translation to another language might be very inappropriate.
+
+- **Namespace** - Developer defined namespaces (e.g. `navigation.links.contact`) are language agnostic and can give more context to allow translators to choose a more appropriate translation. Some trade-offs are that the default language will need a translation file (as keys are not appropriate to show the end user), and that the translator will need to refer to an accompanying description, design or project document where they can see the default language version, as it can't always be derived from the namespace.
+
+Based on the above, **namespaces** are the preferred method as they:
+- Allow for multiple translations of the same word or phrase (to account for various contexts it may be used within).
+- Ensures consistency by forcing the default language to be treated like every other language, and require a translation file.
+- Allows for logical grouping within the translations file e.g. header translations, navigation translations and page by page translations.
+- Ensures a generally standard length of key compared to using the default language directly (a particular translation could be translating an entire paragraph).
+
 ### Plural Rules
 Plural rules offer a way of representing how a language handles various cases of quantity, such as having zero, one or many of something. These cases often differ greatly from language to language.
 
@@ -82,3 +103,4 @@ Example: Rather than handling conditional logic in your application code to show
 - [Language & Region Codes](https://unicode-org.github.io/cldr-staging/charts/latest/supplemental/language_plural_rules.html)
 - [React Intl](https://formatjs.io/docs/react-intl)
 - [React Intl - Message Extraction](https://formatjs.io/docs/getting-started/message-extraction)
+- [Web i18n lessons learnt the hard way](https://medium.com/frontmen/web-internationalisation-i18n-lessons-ive-learned-the-hard-way-438a3e157e0)

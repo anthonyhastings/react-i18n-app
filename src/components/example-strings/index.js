@@ -33,7 +33,6 @@ const ExampleStrings = ({
           value={name}
         />
       </div>
-
       <div className={`${namespace}__pod`}>
         <FormattedMessage
           id="example-strings.gender-label"
@@ -71,7 +70,6 @@ const ExampleStrings = ({
           </FormattedMessage>
         </select>
       </div>
-
       <div className={`${namespace}__pod`}>
         <FormattedMessage
           id="example-strings.unread-messages-label"
@@ -88,7 +86,6 @@ const ExampleStrings = ({
           value={unreadMessages}
         />
       </div>
-
       <div className={`${namespace}__pod`}>
         <FormattedMessage
           id="example-strings.wallet-value-label"
@@ -105,7 +102,6 @@ const ExampleStrings = ({
           value={walletValue}
         />
       </div>
-
       <div className={`${namespace}__pod`}>
         <FormattedMessage
           id="example-strings.literal"
@@ -113,7 +109,6 @@ const ExampleStrings = ({
           defaultMessage="This is a simple string."
         />
       </div>
-
       <div className={`${namespace}__pod`}>
         <FormattedMessage
           id="example-strings.interpolation"
@@ -122,16 +117,14 @@ const ExampleStrings = ({
           values={{ name }}
         />
       </div>
-
       <div className={`${namespace}__pod`}>
         <FormattedMessage
           id="example-strings.plurals"
           description="An interpolated string with placeholders and formatting."
           defaultMessage={`Hello {name}, you have {unreadMessages, plural, one {# unread message} other {# unread messages}}.`}
-          values={{ name: <b>{name}</b>, unreadMessages }}
+          values={{ name: <strong>{name}</strong>, unreadMessages }}
         />
       </div>
-
       {unreadMessages > 0 && (
         <div className={`${namespace}__pod`}>
           <FormattedMessage
@@ -142,7 +135,6 @@ const ExampleStrings = ({
           />
         </div>
       )}
-
       <div className={`${namespace}__pod`}>
         <FormattedMessage
           id="example-strings.dates"
@@ -151,13 +143,30 @@ const ExampleStrings = ({
           values={{ today: Date.now() }}
         />
       </div>
-
       <div className={`${namespace}__pod`}>
         <FormattedMessage
           id="example-strings.currency"
           description="A string with currency formatting."
           defaultMessage={`In my wallet I have {walletValue, number, GBP}.`}
           values={{ walletValue }}
+        />
+      </div>
+      <div className={`${namespace}__pod`}>
+        <FormattedMessage
+          id="example-strings.html"
+          description="A string with a substring wrapped in HTML."
+          defaultMessage="Learn more from the <link>package documentation</link>."
+          values={{
+            link: (text) => (
+              <a
+                href="https://formatjs.io/docs/react-intl/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {text}
+              </a>
+            )
+          }}
         />
       </div>
     </React.Fragment>
