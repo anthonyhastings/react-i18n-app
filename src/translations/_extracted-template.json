@@ -23,6 +23,10 @@
     "defaultMessage": "Other",
     "description": "Indicating neither male or female as a gender."
   },
+  "example-strings.html": {
+    "defaultMessage": "Learn more from the <link>package documentation</link>.",
+    "description": "A string with a substring wrapped in HTML."
+  },
   "example-strings.interpolation": {
     "defaultMessage": "Hello, {name}.",
     "description": "A simple string with some interpolation."

@@ -5,6 +5,7 @@
   "example-strings.gender-option-female": "Femme",
   "example-strings.gender-option-male": "Mâle",
   "example-strings.gender-option-other": "Autre",
+  "example-strings.html": "En savoir plus sur la <link>documentation du package</link>.",
   "example-strings.interpolation": "Bonjour, {name}.",
   "example-strings.literal": "Ceci est une chaîne simple.",
   "example-strings.name-label": "Prénom :",
